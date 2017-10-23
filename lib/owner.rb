@@ -30,8 +30,8 @@ class Owner
     @@owners << self
   end
 
-  def species
-    puts "I am a #{species}."
+  def say_species
+    "I am a #{species}."
   end
 
 
