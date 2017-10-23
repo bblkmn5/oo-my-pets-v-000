@@ -44,13 +44,13 @@ class Owner
 #can buy a cat that is an instance of the Cat class
   def buy_cat(name)
   #knows about its cats
-    pets[:cat] << Cat.new(name)
+    pets[:cats] << Cat.new(name)
   end
 
 #can buy a dog that is an instance of the Dog class
   def buy_dog(name)
 #know sabout its dogs
-    pets[:dog] << Dog.new(name)
+    pets[:dogs] << Dog.new(name)
   end
 
 
