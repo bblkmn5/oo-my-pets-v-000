@@ -25,7 +25,7 @@ class Owner
   def initialize(species)
     @species = species
 #is initialized with a pets attribute as a hash with 3 keys
-    @pets = {:fishes => [], :dogs => [], :cats => []}
+    @pets = {:fishes => [], :cats => [], :dogs => []}
   #keeps track of the owners that have been created
     @@owners << self
   end
