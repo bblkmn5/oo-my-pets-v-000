@@ -1,5 +1,5 @@
 class Owner
-  #can have a name
+  #can have a name, pets attribute as a hash with 3 keys
   attr_accessor :name, :pets
   #can't change its species
   attr_reader :species
