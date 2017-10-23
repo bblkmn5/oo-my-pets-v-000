@@ -5,7 +5,7 @@ class Owner
   @@pets = []
   count = 0
 
-  def initialize(name)
+  def initialize
     @name = name
     @owner = owner
     @@owners << name
