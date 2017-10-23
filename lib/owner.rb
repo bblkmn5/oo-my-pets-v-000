@@ -79,6 +79,7 @@ class Owner
 
 #can sell all its pets
   def sell_pets
+#this makes them all nervous
     pets.each do |species, animals|
       animals.each do |animal|
         animal.mood = "nervous"
@@ -87,4 +88,8 @@ class Owner
     end
   end
 
+#can list off its pets
+  def list_pets
+    puts "I have #{pets[:fishes].count} fish, #{pets[:cats].count} cat(s), and #{pets[:dogs].count} dog(s).
+  end"
 end
