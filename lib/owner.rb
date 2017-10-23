@@ -35,7 +35,16 @@ class Owner
     "I am a #{species}."
   end
 
+#can buy a fish that is an instance of the Fish class
+  def buy_fish(name)
+#knows about its fishes
+    pets[:fishes] << Fish.new(name)
+  end
 
+#can buy a cat that is an instance of the Cat class   
+  def buy_cat(name)
+    pets[:cat] << Cat.new(name)
+  end
 
 
 
