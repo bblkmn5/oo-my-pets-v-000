@@ -1,5 +1,5 @@
 class Owner
-  attr_accessor :name, :pets, :all, :owner
+  attr_accessor :name, :pets, :all
 
   @@owners = []
   @@pets = []
@@ -7,7 +7,6 @@ class Owner
 
   def initialize(name)
     @name = name
-    @owner = owner
     @@owners << name
   end
 
