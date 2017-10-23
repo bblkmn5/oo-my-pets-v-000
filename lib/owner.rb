@@ -53,6 +53,21 @@ class Owner
     pets[:dogs] << Dog.new(name)
   end
 
+#walks the dogs
+  def walk_dog
+#makes each of the dogs' moods happy when walked
+    pets[:dogs].each do |dog|
+      dog.mood = "happy"
+    end
+  end
+    
+#plays with the cats
+  def play_with_cats
+#makes each of the cat's moods happy when played with
+    pets[:cats].each do |cat|
+      cat.mood = "happy"
+    end
+  end
 
 
 end
