@@ -21,7 +21,7 @@ class Owner
 
   def count
     @@owners.each do |c|
-      if c
+      if c != nil
         @@owners.count += 1
       end
     end
