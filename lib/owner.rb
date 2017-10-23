@@ -1,8 +1,9 @@
 class Owner
-  attr_accessor :name, :pets, :all
+  attr_accessor :name, :pets, :all, :count
 
   @@owners = []
   @@pets = []
+  count = 0
 
   def initialize(name)
     @name = name
@@ -16,6 +17,15 @@ class Owner
   def self.reset_all
     @@owners.reset_all
     @@owners
+  end
+
+  def count
+    @@owners.each do |c|
+      if c
+        @@owners.count += 1
+      end
+    end
+    @@owners.count
   end
 
 end
